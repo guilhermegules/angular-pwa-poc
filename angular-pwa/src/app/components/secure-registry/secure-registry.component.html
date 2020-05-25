@@ -1,0 +1,75 @@
+<h3 class="title">Dados do Carro</h3>
+
+<div class="ui card main-form">
+  <div class="content">
+    <h1 class="header">Cadastrar Seguro</h1>
+  </div>
+  <div class="content">
+    <div class="ui large form equal width stackable grid">
+
+      <h3 class="title">Dados do Carro</h3>
+
+      <div class="three column row">
+
+        <div class="column field">
+          <label for="carroModel">Marca</label>
+          <select class="ui fluid search selection dropdown" [(ngModel)]="secure.carBrand">
+            <option *ngFor="let m of carBrands$ | async" class="item" [value]="m.name">{{ m.name }}</option>
+          </select>
+        </div>
+
+        <div class="column field">
+          <label for="carModel">Modelo</label>
+          <input type="text" id="carModel" name="carModel"
+            placeholder="Modelo" [(ngModel)]="secure.carModel"/>
+        </div>
+
+        <div class="column field">
+          <label for="carBoard">Placa</label>
+          <input type="text" id="carBoard" name="carBoard"
+            placeholder="Placa" [(ngModel)]="secure.carBoard"/>
+        </div>
+
+      </div>
+
+      <h3 class="title">Dados do Proprietário</h3>
+      <div class="three column row">
+        <div class="column field">
+          <label for="ownerName">Nome</label>
+          <input type="text" id="ownerName" name="ownerName"
+            placeholder="Nome" [(ngModel)]="secure.ownerName"
+          />
+        </div>
+
+        <div class="column field">
+          <label for="ownerSurname">Sobrenome</label>
+          <input type="text"
+            id="ownerSurname"
+            name="ownerSurname"
+            placeholder="Sobrenome"
+            [(ngModel)]="secure.ownerSurname"
+          />
+        </div>
+
+        <div class="column field">
+          <label for="ownerBirthDate">Data de Nascimento</label>
+          <input type="date"
+            id="ownerBirthDate"
+            name="ownerBirthDate"
+            placeholder="Data de Nascimento"
+            [(ngModel)]="secure.ownerBirthDate"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="extra content">
+    <div class="row">
+      <button class="ui positive right floated button" (click)="adicionar()">Salvar</button>
+    </div>
+    <div class="row notification-button-section">
+      <button class="ui button" (click)="enviarNotificacao()">Enviar notificação</button>
+    </div>
+  </div> -->
+</div>
