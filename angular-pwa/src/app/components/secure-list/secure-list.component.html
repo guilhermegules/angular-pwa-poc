@@ -1,1 +1,31 @@
-<p>secure-list works!</p>
+<div class="ui card secure-list">
+  <div class="content">
+    <header>Seguros</header>
+  </div>
+
+  <div class="content">
+    <ng-container *ngIf="secures$ | async as secures; else loading">
+      <ng-container *ngIf="secures.length > 0; else withoutSecure">
+        <div *ngFor="let secure of secures" class="claim-row">
+          <div class="owner-info">
+            <strong>Marca e modelo: </strong> {{ secure.carBrand }} -
+            {{ secure.carModel }}
+          </div>
+          <div class="owner-info">
+            <strong>Proprietário: </strong> {{ secure.ownerName }}
+            {{ secure.ownerSurname }}
+          </div>
+          <hr>
+        </div>
+      </ng-container>
+    </ng-container>
+
+    <ng-template #loading>
+      Carregando seguros...
+    </ng-template>
+
+    <ng-template #withoutSecure>
+      Não há seguros cadastrados.
+    </ng-template>
+  </div>
+</div>

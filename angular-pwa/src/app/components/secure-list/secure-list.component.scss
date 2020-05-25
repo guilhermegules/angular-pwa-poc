@@ -1,0 +1,13 @@
+.secure-list {
+  width: 100%;
+}
+
+.owner-info {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em;
+
+  strong {
+    padding-right: 0.2em;
+  }
+}
