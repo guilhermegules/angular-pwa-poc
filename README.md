@@ -11,3 +11,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Using:
 - [@angular/pwa](https://angular.io/guide/service-worker-getting-started);
 - [Semantic UI](https://semantic-ui.com/);
+- [Service Worker configuration](https://angular.io/guide/service-worker-config);
