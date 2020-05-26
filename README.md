@@ -8,6 +8,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Build
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Estructure
+Nodejs with typescript server and Angular 9
+
 Using:
 - [@angular/pwa](https://angular.io/guide/service-worker-getting-started);
 - [Semantic UI](https://semantic-ui.com/);
