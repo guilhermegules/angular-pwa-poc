@@ -1,8 +1,10 @@
 import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 import { CarBrand } from '../models/CarBrand';
-import { Observable } from 'rxjs';
 
 interface CarResponse {
   Makes: Array<any>;
