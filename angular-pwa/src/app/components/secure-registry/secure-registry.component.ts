@@ -24,7 +24,7 @@ export class SecureRegistryComponent implements OnInit {
     this.carBrands$ = this.carBrandService.getMarcas();
   }
 
-  registry(): void {
+  public registry(): void {
     this.secureService.registry(this.secure);
   }
 }
