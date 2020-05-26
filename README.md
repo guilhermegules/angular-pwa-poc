@@ -11,7 +11,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Estructure
 Nodejs with typescript server and Angular 9
 
-Using:
+## Using:
 - [@angular/pwa](https://angular.io/guide/service-worker-getting-started);
 - [Semantic UI](https://semantic-ui.com/);
 - [Service Worker configuration](https://angular.io/guide/service-worker-config);
+- [IndexedDB](https://developer.mozilla.org/pt-BR/docs/Web/API/IndexedDB_API);
+- [Dexie.js](https://dexie.org/);
