@@ -8,8 +8,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors({ origin: true, credentials: true }));
 
-app.route('/api/seguros').post(saveSecure);
-app.route('/api/seguros').get(listSecures);
+app.route('/api/segures').post(saveSecure);
+app.route('/api/segures').get(listSecures);
 
 const HOST = 'localhost';
 const PORT = 9000;
